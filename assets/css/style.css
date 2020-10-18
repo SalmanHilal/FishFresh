@@ -115,17 +115,27 @@ footer ul li .fa {
   }
   .subscribe #email::-ms-input-placeholder { 
     color: #fff;
-  }
-/* Responsive CSS */
-@media (min-width: 1200px){
-
 }
+.login .form-control {
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+/* Responsive CSS */
+
 @media (max-width: 1500px){
     footer ul li .fa {
         width: 27px;
     }
+    .navbar-brand img{
+        width: 170px;
+    }
 }
-
+@media (max-width: 1200px){
+    .navbar-brand img{
+        width: 130px;
+    }
+}
 
 @media (max-width: 768px){
  
