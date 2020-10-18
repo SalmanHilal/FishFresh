@@ -65,6 +65,9 @@ h2{
     font-weight: bold;
     border-width: 2px;
 }
+.btn_lg{
+    padding: 0.7rem 1.5rem;
+}
 .container {
     max-width: 1920px;
     width: 90%;
@@ -82,10 +85,47 @@ h2{
     min-height: 90vh;
     background-size: contain;
 }
+footer ul li a{
+    color: #fff;
+}
+footer ul li .fa {
+    width: 40px;
+}
+.subscribe #email{
+    background-color: transparent;
+    border-color: #fff;
+    border-width: 2px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+}
+.subscribe button{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.subscribe button,.subscribe #email{
+    height: 50px;
+}
+.subscribe #email::placeholder {
+    color:#fff;
+    opacity: 1; 
+  }
+  .subscribe #email:-ms-input-placeholder { 
+    color: #fff;
+  }
+  .subscribe #email::-ms-input-placeholder { 
+    color: #fff;
+  }
 /* Responsive CSS */
 @media (min-width: 1200px){
 
 }
+@media (max-width: 1500px){
+    footer ul li .fa {
+        width: 27px;
+    }
+}
+
 
 @media (max-width: 768px){
  
