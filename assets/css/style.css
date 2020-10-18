@@ -211,7 +211,7 @@ button:focus ,.number-product:focus{
 }
 .product img{
     height: auto;
-    max-width: 90%;
+    max-width: 75%;
 }
 /* Responsive CSS */
 
@@ -269,6 +269,9 @@ button:focus ,.number-product:focus{
     }
     footer.pt-5{
         padding-top: 0 !important;
+    }
+    .product img{
+        max-width: 80%;
     }
 }
 @media (max-width: 576px){
