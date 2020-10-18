@@ -143,7 +143,12 @@ footer ul li .fa {
 .navbar-expand-lg .navbar-nav .nav-item:nth-last-child(-n+5) {
 
  }
-
+.product p{
+    line-height: 1.1;
+}
+.product .form-control{
+    font-size: 10px;
+}
 /* Responsive CSS */
 
 @media (max-width: 1500px){
