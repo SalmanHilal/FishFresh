@@ -78,6 +78,13 @@ h2{
     background-position: top center;
     min-height: 50vh;
 }
+.bg_colorfull{
+    background-image: url(../images/bg-img-colorfull.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    min-height: 630px;
+    background-size: cover;
+}
 .two{
     background-image: url(../images/banner-bg.png);
     background-repeat: no-repeat;
@@ -213,6 +220,32 @@ button:focus ,.number-product:focus{
     height: auto;
     max-width: 75%;
 }
+.chain{
+    border:2px solid #fff;
+    border-radius: 10px;
+    min-width: 750px;
+}
+.chain_first{
+    min-width: 750px;
+}
+.chain_second{
+    min-width: 900px;
+}
+.chain_first img{
+    height: 45px;
+}
+.chain_second img {
+    height: 40px;
+}
+.steps img {
+    height: 50px;
+}
+.bg_colorfull hr{
+    border-color: #fff;
+}
+.steps >p {
+    min-width: 176px;
+}
 /* Responsive CSS */
 
 @media (max-width: 1500px){
@@ -240,6 +273,9 @@ button:focus ,.number-product:focus{
     .h3, h3 {
         font-size: 1.1rem;
     }
+    .h4, h4 {
+        font-size: 1rem;
+    }
 }
 @media (max-width: 1200px){
     .navbar-brand img{
@@ -251,8 +287,37 @@ button:focus ,.number-product:focus{
     body {
         font-size: 14px;
     }
+    .chain_first{
+        width: 80%;
+        min-width: auto;
+    }
+    .chain_second{
+        min-width: auto;
+        width: 90%;
+    }
+    .chain_first img{
+        height: 35px;
+    }
+    .chain_second img {
+        height: 30px;
+    }
+    .steps img {
+        height: 40px;
+    }
+    .steps >p {
+        min-width: 50px;
+    }
 }
-
+@media (max-width: 980px){
+    .chain_first{
+        width: 95%;
+        min-width: auto;
+    }
+    .chain_second{
+        min-width: auto;
+        width: 100%;
+    }
+}
 @media (max-width: 768px){
     #opt .d-flex > .opt:not(:last-child) {
         margin-right: 10px !important;
@@ -264,6 +329,9 @@ button:focus ,.number-product:focus{
     .h3, h3 {
         font-size: 1rem;
     }
+    .h4, h4 {
+        font-size: 0.8rem;
+    }
     .font-sm {
         font-size: 10px;
     }
@@ -273,11 +341,42 @@ button:focus ,.number-product:focus{
     .product img{
         max-width: 80%;
     }
+    .chain_first img{
+        height: 30px;
+    }
+    .chain_second img {
+        height: 25px;
+    }
+    .steps img {
+        height: 32px;
+    }
+    .steps {
+        flex-wrap: wrap;
+        justify-content: center!important;
+    }
+    .steps p{
+        margin-bottom: 20px !important;
+        margin-right: 20px !important;
+        max-width: 150px;
+    }
 }
+
 @media (max-width: 576px){
     .col-xs-6 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .chain{
+        flex-wrap: wrap;
+        justify-content: center!important;
+    }
+    .chain h4{
+        min-width: 250px;
+        text-align:center;
+        margin-bottom: 20px !important;
+    }
+    .chain p{
+        margin-bottom: 20px !important;
     }
 }
