@@ -147,7 +147,65 @@ footer ul li .fa {
     line-height: 1.1;
 }
 .product .form-control{
-    font-size: 10px;
+    font-size: 12px;
+}
+.product .btn:hover{
+    color: #1E9889;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(../images/Dropdown@2x.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 53%;
+    background-size: 10px;
+}
+
+.product-count a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.button-count {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #1e9889;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.number-product {
+    display: inline-block;
+    width: 25px;
+    height: 28px;
+    font-size: 15px;
+    border: 0;
+    text-align: right;
+    background-color: transparent;
+}
+
+:disabled {
+    background-color: silver;
+}
+button:focus ,.number-product:focus{
+    outline: none;
+}
+.product-count{
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+.number-product, .product-count small {
+    position: relative;
+    top: -2px;
+    left: -4px;
 }
 /* Responsive CSS */
 
