@@ -72,6 +72,12 @@ h2{
     max-width: 1920px;
     width: 90%;
 }
+.bg_light{
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 50vh;
+}
 .two{
     background-image: url(../images/banner-bg.png);
     background-repeat: no-repeat;
@@ -120,6 +126,23 @@ footer ul li .fa {
     border-radius: 50px;
     font-size: 12px;
 }
+.border-radius-0{
+    border-radius: 0!important;
+}
+#opt .opt {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #939393;
+    max-width: 55px;
+    font-size: 1.7rem;
+    color:#939393;
+}
+.grey-color{
+    color:#939393 !important;
+}
+.navbar-expand-lg .navbar-nav .nav-item:nth-last-child(-n+5) {
+
+ }
 
 /* Responsive CSS */
 
@@ -130,6 +153,24 @@ footer ul li .fa {
     .navbar-brand img{
         width: 170px;
     }
+    .bg_light{
+        background-size: contain;
+    }
+    body{
+        font-size: 16px;
+    }
+    .font-sm{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .h3, h3 {
+        font-size: 1.1rem;
+    }
 }
 @media (max-width: 1200px){
     .navbar-brand img{
@@ -138,7 +179,16 @@ footer ul li .fa {
 }
 
 @media (max-width: 768px){
- 
+    #opt .d-flex > .opt:not(:last-child) {
+        margin-right: 10px !important;
+    }
+    #opt .d-flex > .opt {
+        max-width: 30px;
+        font-size: 1rem;
+    }
+    .h3, h3 {
+        font-size: 1rem;
+    }
 }
 @media (max-width: 500px){
 
