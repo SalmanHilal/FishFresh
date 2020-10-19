@@ -337,6 +337,12 @@ body .search-box input{
         min-width: auto;
         width: 100%;
     }
+
+}
+@media (max-width: 991px){
+    .hideRes{
+        display: none !important
+    }
 }
 @media (max-width: 768px){
     #opt .d-flex > .opt:not(:last-child) {
