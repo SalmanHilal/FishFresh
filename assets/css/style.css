@@ -343,6 +343,9 @@ body .search-box input{
     .hideRes{
         display: none !important
     }
+    .two .col, .two{
+        min-height: 65vh;
+    }
 }
 @media (max-width: 768px){
     #opt .d-flex > .opt:not(:last-child) {
