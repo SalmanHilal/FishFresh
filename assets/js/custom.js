@@ -1,6 +1,5 @@
 $(function() {
     var num;
-
     $('.button-count:first-child').click(function(){
       num = parseInt($(this).siblings('.number-product').val());
       if (num > 1) {
@@ -26,7 +25,13 @@ $(function() {
         $(this).siblings('.button-count.first').prop('disabled', true);
       }
     });
-    
-    
+    $('.showSearch').click(function(){
+      $(this).parent().parent('ul.navigatsion').hide();
+      $('ul.search-box').show();
+    });
+    $('button.cross').click(function(){
+      $(this).parent().parent().parent('ul.search-box').hide();
+      $('ul.navigatsion').show();
+    });
     
 });

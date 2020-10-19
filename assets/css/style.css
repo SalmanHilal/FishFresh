@@ -246,6 +246,26 @@ button:focus ,.number-product:focus{
 .steps >p {
     min-width: 176px;
 }
+.search-box button.search{
+    border-radius: 0;
+    border-right: 0;
+}
+.search-box button.cross{
+    border-radius: 0 50px 50px 0;
+}
+body .search-box input{
+    min-width: 50vw;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0!important;
+    font-size: inherit !important;
+}
+.btn:hover{
+    color: #1E9889;
+}
+.dnone{
+    display: none;
+}
+
 /* Responsive CSS */
 
 @media (max-width: 1500px){
