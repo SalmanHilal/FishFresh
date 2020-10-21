@@ -259,11 +259,33 @@ body .search-box input{
     border-top-right-radius: 0!important;
     font-size: inherit !important;
 }
-.btn:hover{
-    color: #1E9889;
+.btn:not(.theme-bg):not(select):hover{
+    color: #fff !important;
+    background-color: #1E9889;
+}
+.btn.theme-bg:hover{
+    color: #1E9889 !important;
+    background-color: #fff;
 }
 .dnone{
     display: none;
+}
+.cart{
+    position: relative;
+}
+.cart small{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background-color: #1E9889;
+    color: #fff;
+    border-radius: 100%;
+    padding: 2px 3px;
+    min-width: 18px;
+    text-align: center;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #1E9889;
 }
 
 /* Responsive CSS */
@@ -345,6 +367,10 @@ body .search-box input{
     }
     .two .col, .two{
         min-height: 65vh;
+    }
+    .cart small{
+        right: -9px;
+        top: -2px;
     }
 }
 @media (max-width: 768px){
